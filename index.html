@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Paralax</title>
+</head>
+<body>
+    <div class="hore" style="width: 100%">
+        <h1>TOP 5 zbraní z videoher</h1>
+    </div>
+    <div id="monkaS" class="parallax"></div>
+
+
+        <article class="text">
+            <h2>M16A4</h2>
+            <p><strong>M16A4 je moderní varianta původní legendární americké zbraně M16A1 hojně používané během války ve Vietnamu, Iráku, nebo v Perském zálivu. Zde můžete vidět variantu s granátometem M203</strong></p>
+            <p>Ráže: 5.56x45mm (.223 Remington)</p>
+            <p>Ve službě: 1963 - dosud</p>
+            <p>Kadence: 800 ran/min</p>
+            <img class = "intx" src="./IMG/M16A4intx.png">
+        </article>
+    <div id="M16A4" class="parallax"></div>
+        <div style="position: relative;">
+            <img src="./IMG/M16A4.png" class="gun">
+            <img src="./IMG/M16A4sc.png" class="gunsc">
+            <img src="./IMG/muzzle.png" class="muz">
+        </div>
+
+
+        <article class="text">
+            <h2>AK-12</h2>
+            <p><strong>AK-12 je pátou generací legendárních Kalašnikových útočných pušek a nástupce AK-74. Zbraně této generace se vyrábí s 4 nejpoužívanějšími rážemi, ovšem pod jiným označením.</strong></p>
+            <p>Ráže: 5.45x39mm</p>
+            <p>Ve službě: 2018 - dosud</p>
+            <p>Kadence: 650 ran/min</p>
+            <img class = "intx" src="./IMG/AK-12intx.png">
+         </article>
+    <div id="AK12" class="parallax"></div>
+        <div style="position: relative;">
+            <img src="./IMG/AK-12 hip.png" class="gun">
+            <img src="./IMG/AK-12sc.png" class="gunsc">
+            <img src="./IMG/muzzle.png" class="muz">
+        </div>
+
+
+        <article class="text">
+            <h2>HK416</h2>
+            <p><strong>HK416 je německá útočná puška založená na platformě AR-15 (jako např. M4). Zbraň je navržena a vyráběna německou firmou Heckler & Koch. Zbraň je momentálně používána německou armádou, francouzskými ozbrojenými jednotkami, nebo také US Navy SEAL.</strong></p>
+            <p>Ráže: 5.56x45mm (.223 Remington)</p>
+            <p>Ve službě: 2005 - dosud</p>
+            <p>Kadence: 700-900 ran/min</p>
+            <img class= "intx" src="./IMG/HK416intx.png">
+        </article>
+
+    <div id="HK416" class="parallax"></div>
+        <div style="position: relative;">
+            <img src="./IMG/HK416.png" class="gun">
+            <img src="./IMG/HK416sc.png" class="gunsc">
+            <img src="./IMG/muzzle.png" class="muz">
+        </div>
+        <article class="text">
+            <h2>FN SCAR-H</h2>
+            <p><strong>FN SCAR je rodina automatických útočných pušek vyvinutá belgickou firmou FN Herstal. Vyrábí se ve dvou hlavních verzích, SCAR-L (lehký) a SCAR-H (těžký).</strong></p>
+            <p>Ráže: 7.62x51mm (.308 Remington)</p>
+            <p>Ve službě: 2009 - dosud</p>
+            <p>Kadence: 550-650 ran/min</p>
+            <img class= "intx" src="./IMG/SCAR-Hintx.png">
+        </article>
+
+    <div id="SCARH" class="parallax"></div>
+        <div style="position: relative;">
+            <img src="./IMG/SCAR-H.png" class="gun">
+            <img src="./IMG/SCAR-Hsc.png" class="gunsc">
+            <img src="./IMG/muzzle.png" class="muz">
+        </div>
+        <article class="text">
+            <h2>FN Five-seveN</h2>
+            <p><strong>FN Five-seveN je samonabíjející pistole vyvinutá a vyráběná belgickou firmou FN Herstal. Název zbraně odkazuje jak na svou ráži, tak na svého výrobce.</strong></p>
+            <p>Ráže: 5.7x28mm</p>
+            <p>Ve službě: 2000 - dosud</p>
+            <p>Kadence: 750 ran/min</p>
+            <img class= "pintx" src="./IMG/57intx.png">
+        </article>
+        
+    <div id="fiveseven" class="parallax"></div>
+        <div style="position: relative;">
+            <img src="./IMG/57.png" class="pistol">
+            <img src="./IMG/57sc.png" class="gunsc">
+            <img src="./IMG/muzzle.png" class="muz">
+        </div>
+
+    <footer>
+        <p>My content was inspired by my knowledge</a>. </p>
+    </footer>
+
+    <script type="text/javascript">
+        document.addEventListener("mousemove", function(e){
+            const gun = document.querySelectorAll(".gun");
+            const pistol = document.querySelectorAll(".pistol")
+            const gunsc = document.querySelectorAll(".gunsc")
+            const muz = document.querySelectorAll(".muz")
+            
+            gun[0].style.left = e.pageX - 180 + "px"; 
+            gun[1].style.left = e.pageX - 350 + "px"; 
+            gun[2].style.left = e.pageX - 180 + "px"; 
+            gun[3].style.left = e.pageX - 330 + "px"; 
+            pistol[0].style.left = e.pageX - 60 + "px"; 
+
+            gunsc[0].style.left = e.pageX - 300 + "px"; 
+            gunsc[1].style.left = e.pageX - 320 + "px"; 
+            gunsc[2].style.left = e.pageX - 280 + "px"; 
+            gunsc[3].style.left = e.pageX - 300 + "px"; 
+            gunsc[4].style.left = e.pageX - 144 + "px"; 
+
+            muz[0].style.left = e.pageX - 155 + "px"; 
+            muz[1].style.left = e.pageX - 155 + "px"; 
+            muz[2].style.left = e.pageX - 155 + "px"; 
+            muz[3].style.left = e.pageX - 155 + "px"; 
+            muz[4].style.left = e.pageX - 155 + "px"; 
+            
+        })
+        
+        window.addEventListener("contextmenu", e => e.preventDefault());
+        document.addEventListener("mousedown", function(e){
+            const gun = document.querySelectorAll(".gun");
+            const pistol = document.querySelectorAll(".pistol")
+            const gunsc = document.querySelectorAll(".gunsc")
+            const muz = document.querySelectorAll(".muz")
+            if (event.which == 3){
+                for (let i = 0; i<gun.length;i++){
+                    gun[i].style.opacity = 0;
+                }
+
+                pistol[0].style.opacity = 0; 
+
+                for (let i = 0; i<gunsc.length;i++){
+                    gunsc[i].style.opacity = 1;
+                }    
+            }
+
+            if (event.which == 1){
+                for (let i = 0; i<muz.length;i++){
+                    muz[i].style.opacity = 1;
+
+                }
+            }
+            if (gunsc[0].style.opacity == 0){
+                muz[0].style.bottom = 280 + "px"; 
+                muz[1].style.bottom = 280 + "px"; 
+                muz[2].style.bottom = 280 + "px"; 
+                muz[3].style.bottom = 180 + "px"; 
+                muz[4].style.bottom = 220 + "px"; 
+        }
+            else{
+                muz[0].style.bottom = 220 + "px"; 
+                muz[1].style.bottom = 200 + "px"; 
+                muz[2].style.bottom = 260 + "px"; 
+                muz[3].style.bottom = 170 + "px"; 
+                muz[4].style.bottom = 260 + "px";
+        }
+        })
+
+        document.addEventListener("mouseup", function(e){
+            const gun = document.querySelectorAll(".gun");
+            const pistol = document.querySelectorAll(".pistol")
+            const gunsc = document.querySelectorAll(".gunsc")
+            const muz = document.querySelectorAll(".muz")
+            if (event.which == 3){
+                for (let i = 0; i<gun.length;i++){
+                    gun[i].style.opacity = 1;
+                }
+                pistol[0].style.opacity = 1; 
+
+                for (let i = 0; i<gunsc.length;i++){
+                    gunsc[i].style.opacity = 0;
+                }
+            } 
+
+            if (event.which == 1){
+                for (let i = 0; i<muz.length;i++){
+                    muz[i].style.opacity = 0;
+                }
+            }
+            if (gunsc[0].style.opacity == 0){
+                muz[0].style.bottom = 280 + "px"; 
+                muz[1].style.bottom = 280 + "px"; 
+                muz[2].style.bottom = 280 + "px"; 
+                muz[3].style.bottom = 180 + "px"; 
+                muz[4].style.bottom = 220 + "px"; 
+        }
+            else{
+                muz[0].style.bottom = 220 + "px"; 
+                muz[1].style.bottom = 200 + "px"; 
+                muz[2].style.bottom = 260 + "px"; 
+                muz[3].style.bottom = 170 + "px"; 
+                muz[4].style.bottom = 260 + "px";
+        }
+        })
+
+        
+
+        
+
+        
+    </script>
+    
+    
+    
+    
+</body>
+</html>
